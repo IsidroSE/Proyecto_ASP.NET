@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<!--
+Template Name: Academic Education V2
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Proyecto ASP.NET Isidro Sotoca Estruch</title>
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+    
+    <div class="wrapper row2">
+        <div class="rounded">
+        <nav id="mainav" class="clear"> 
+            <!-- ################################################################################################ -->
+            <ul class="clear">
+            <li class="active"><a href="Default.aspx">Home</a></li>
+            <li><a class="drop" href="#">Carreras</a>
+                <ul>
+                <li><a href="Insertar_Carreras.aspx">Insertar</a></li>
+                <li><a href="Editar_Carreras.aspx">Editar</a></li>
+                <li><a href="Borrar_Carreras.aspx">Borrar</a></li>
+                <li><a href="Vista_Carreras.aspx">Listar</a></li>
+                </ul>
+            </li>
+            <li><a class="drop" href="#">Participantes</a>
+                <ul>
+                <li><a href="Insertar_Participantes.aspx">Insertar</a></li>
+                <li><a href="Editar_Participantes.aspx">Editar</a></li>
+                <li><a href="Borrar_Participantes.aspx">Borrar</a></li>
+                <li><a href="Vista_Participantes.aspx">Listar</a></li>
+                </ul>
+            </li>
+            <li><a class="drop" href="#">Chips</a>
+                <ul>
+                <li><a href="Insertar_Chips.aspx">Insertar</a></li>
+                <li><a href="Editar_Chips.aspx">Editar</a></li>
+                <li><a href="Borrar_Chips.aspx">Borrar</a></li>
+                <li><a href="Vista_Chips.aspx">Listar</a></li>
+                </ul>
+            </li>
+            <li><a href="Importar_fichero.aspx">Importar fichero</a></li>
+            </ul>
+            <!-- ################################################################################################ --> 
+        </nav>
+        </div>
+    </div> <!-- Fin menú -->
+
+    <!-- Cuerpo -->
+    <div class="wrapper row3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <!-- Fin Cuerpo -->
+
+    <!-- Footer -->
+    <div class="wrapper row5">
+      <div id="copyright" class="clear"> 
+        <!-- ################################################################################################ -->
+        <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Isidro Sotoca Estruch</a></p>
+        <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+        <!-- ################################################################################################ --> 
+      </div>
+    </div>
+    <!-- Fin Footer -->
+</form>
+
+<!-- Scripts -->
+<script src="layout/scripts/jquery.min.js"></script> 
+<script src="layout/scripts/jquery.fitvids.min.js"></script> 
+<script src="layout/scripts/jquery.mobilemenu.js"></script> 
+<script src="layout/scripts/tabslet/jquery.tabslet.min.js"></script>
+<!-- Fin Scripts -->
+</body>
+</html>
